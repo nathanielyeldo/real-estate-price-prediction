@@ -3,8 +3,6 @@ import util
 
 app = Flask(__name__, static_folder="static", template_folder="templates")
 
-util.load_saved_artifacts()
-
 # Serve frontend
 @app.route("/")
 def home():
